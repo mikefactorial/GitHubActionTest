@@ -82,7 +82,7 @@ jobs:
           user: mikefactorial
           # organization: sample-org
           project_id: 1
-          resource_node_id: ${{ github.event.issue.node_id }}
+          resource_node_id: ${{ github.event.pull_request.node_id }}
           status_value: ${{ env.in_progress }} # Target status
       - name: Move PR to CoE Starter Kit ${{ env.in_progress }}
         uses: leonsteinhaeuser/project-beta-automations@v1.1.1
@@ -92,7 +92,7 @@ jobs:
           user: mikefactorial
           # organization: sample-org
           project_id: 2
-          resource_node_id: ${{ github.event.issue.node_id }}
+          resource_node_id: ${{ github.event.pull_request.node_id }}
           status_value: ${{ env.in_progress }} # Target status
   pr_closed:
     name: pr_closed
@@ -107,7 +107,7 @@ jobs:
           user: mikefactorial
           # organization: sample-org
           project_id: 1
-          resource_node_id: ${{ github.event.issue.node_id }}
+          resource_node_id: ${{ github.event.pull_request.node_id }}
           status_value: ${{ env.done }} # Target status
       - name: Moved PR to Coe Starter Kit ${{ env.done }}
         uses: leonsteinhaeuser/project-beta-automations@v1.1.1
@@ -117,6 +117,6 @@ jobs:
           user: mikefactorial
           # organization: sample-org
           project_id: 2
-          resource_node_id: ${{ github.event.issue.node_id }}
+          resource_node_id: ${{ github.event.pull_request.node_id }}
           status_value: ${{ env.done }} # Target status
 

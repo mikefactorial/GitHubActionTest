@@ -76,7 +76,7 @@ jobs:
     steps:
       - name: Move PR to ALM Accelerator ${{ env.in_progress }}
         uses: leonsteinhaeuser/project-beta-automations@v1.1.1
-        if: contains(github.event.issue.labels.*.name, 'alm-accelerator')
+        if: contains(github.event.pull_request.labels.*.name, 'alm-accelerator')
         with:
           gh_token: ${{ secrets.MY_GITHUB_TOKEN }}
           user: mikefactorial
@@ -86,7 +86,7 @@ jobs:
           status_value: ${{ env.in_progress }} # Target status
       - name: Move PR to CoE Starter Kit ${{ env.in_progress }}
         uses: leonsteinhaeuser/project-beta-automations@v1.1.1
-        if: contains(github.event.issue.labels.*.name, 'coe-starter-kit')
+        if: contains(github.event.pull_request.labels.*.name, 'coe-starter-kit')
         with:
           gh_token: ${{ secrets.MY_GITHUB_TOKEN }}
           user: mikefactorial
@@ -101,7 +101,7 @@ jobs:
     steps:
       - name: Moved PR to ALM Accelerator ${{ env.done }}
         uses: leonsteinhaeuser/project-beta-automations@v1.1.1
-        if: contains(github.event.issue.labels.*.name, 'alm-accelerator')
+        if: contains(github.event.pull_request.labels.*.name, 'alm-accelerator')
         with:
           gh_token: ${{ secrets.MY_GITHUB_TOKEN }}
           user: mikefactorial
@@ -111,7 +111,7 @@ jobs:
           status_value: ${{ env.done }} # Target status
       - name: Moved PR to Coe Starter Kit ${{ env.done }}
         uses: leonsteinhaeuser/project-beta-automations@v1.1.1
-        if: contains(github.event.issue.labels.*.name, 'coe-starter-kit')
+        if: contains(github.event.pull_request.labels.*.name, 'coe-starter-kit')
         with:
           gh_token: ${{ secrets.MY_GITHUB_TOKEN }}
           user: mikefactorial

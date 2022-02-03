@@ -4,26 +4,18 @@ on:
   issues:
     types:
       - opened
-      - reopened
-      - closed
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - review_requested
-      - closed
 
 # map fields with customized labels
 env:
-  todo: Todo
-  done: Done
-  in_progress: In Progress
+  todo: Todo ✏️
+  done: Done ✅
+  in_progress: In Progress 🚧
 
 jobs:
   issue_opened_or_reopened:
     name: issue_opened_or_reopened
     runs-on: ubuntu-latest
-    if: github.event_name == 'issues' && contains(github.event.issue.labels.*.name, 'alm-accelerator') && (github.event.action == 'opened' || github.event.action == 'reopened')
+    if: github.event_name == 'issues' && github.event.action == 'opened' && contains(github.event.issue.labels.*.name, 'alm-accelerator')
     steps:
       - name: Move issue to ${{ env.todo }}
         uses: leonsteinhaeuser/project-beta-automations@v1.1.1

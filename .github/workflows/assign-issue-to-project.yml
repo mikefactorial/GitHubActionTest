@@ -15,9 +15,4 @@ jobs:
       uses: srggrs/assign-one-project-github-action@1.2.0
       if: contains(github.event.issue.labels.*.name, 'alm-accelerator')
       with:
-        project: 'https://github.com/microsoft/coe-starter-kit/projects/1'
-    - name: Assign issues with coe-starter-kit label to CoE Starter Kit Project
-      uses: srggrs/assign-one-project-github-action@1.2.0
-      if: contains(github.event.issue.labels.*.name, 'coe-starter-kit')
-      with:
-        project: 'https://github.com/microsoft/coe-starter-kit/projects/7'
+        project: 'https://github.com/users/mikefactorial/projects/1'

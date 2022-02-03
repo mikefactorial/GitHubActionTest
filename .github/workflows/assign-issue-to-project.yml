@@ -22,6 +22,7 @@ jobs:
         if: contains(github.event.issue.labels.*.name, 'alm-accelerator')
         with:
           gh_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          user: mikefactorial
           # organization: sample-org
           project_id: 1
           resource_node_id: ${{ github.event.issue.node_id }}
@@ -31,6 +32,7 @@ jobs:
         if: contains(github.event.issue.labels.*.name, 'coe-starter-kit')
         with:
           gh_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          user: mikefactorial
           # organization: sample-org
           project_id: 2
           resource_node_id: ${{ github.event.issue.node_id }}
@@ -45,6 +47,7 @@ jobs:
         if: contains(github.event.issue.labels.*.name, 'alm-accelerator')
         with:
           gh_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          user: mikefactorial
           # organization: sample-org
           project_id: 1
           resource_node_id: ${{ github.event.issue.node_id }}
@@ -54,6 +57,7 @@ jobs:
         if: contains(github.event.issue.labels.*.name, 'coe-starter-kit')
         with:
           gh_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          user: mikefactorial
           # organization: sample-org
           project_id: 2
           resource_node_id: ${{ github.event.issue.node_id }}
@@ -68,6 +72,7 @@ jobs:
         if: contains(github.event.issue.labels.*.name, 'alm-accelerator')
         with:
           gh_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          user: mikefactorial
           # organization: sample-org
           project_id: 1
           resource_node_id: ${{ github.event.issue.node_id }}
@@ -77,6 +82,7 @@ jobs:
         if: contains(github.event.issue.labels.*.name, 'coe-starter-kit')
         with:
           gh_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          user: mikefactorial
           # organization: sample-org
           project_id: 2
           resource_node_id: ${{ github.event.issue.node_id }}
@@ -91,6 +97,7 @@ jobs:
         if: contains(github.event.issue.labels.*.name, 'alm-accelerator')
         with:
           gh_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          user: mikefactorial
           # organization: sample-org
           project_id: 1
           resource_node_id: ${{ github.event.issue.node_id }}
@@ -100,6 +107,7 @@ jobs:
         if: contains(github.event.issue.labels.*.name, 'coe-starter-kit')
         with:
           gh_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          user: mikefactorial
           # organization: sample-org
           project_id: 2
           resource_node_id: ${{ github.event.issue.node_id }}

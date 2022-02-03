@@ -1,8 +1,7 @@
 name: 🚀[ALM Accelerator] Feature request
-about: File a feature request report for the ALM Accelerator 
 description: File a feature request report for the ALM Accelerator 
-title: "[ALM Accelerator - Feature]: issue title"
-labels: [alm-accelerator,enhancement]
+title: "[ALM Accelerator - Feature]: FEATURE TITLE"
+labels: ["alm-accelerator","enhancement"]
 assignees: mikefactorial
 body:
 - type: textarea

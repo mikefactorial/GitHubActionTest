@@ -1,8 +1,7 @@
 name: 🦗[ALM Accelerator] Bug report
-about: File a bug report for the ALM Accelerator 
 description: File a bug report for the ALM Accelerator 
-title: "[ALM Accelerator - BUG]: issue title"
-labels: [alm-accelerator]
+title: "[ALM Accelerator - BUG]: ISSUE TITLE"
+labels: ["alm-accelerator"]
 assignees: mikefactorial
 body:
 - type: textarea

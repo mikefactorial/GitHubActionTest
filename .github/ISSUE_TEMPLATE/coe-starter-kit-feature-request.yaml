@@ -1,8 +1,7 @@
 name: 🚀[CoE Starter Kit] Feature request
-about: File a feature request report for the CoE Starter Kit
 description: File a feature request report for the CoE Starter Kit
-title: "[CoE Starter Kit - Feature]: issue title"
-labels: [coe-starter-kit,enhancement]
+title: "[CoE Starter Kit - Feature]: FEATURE TITLE"
+labels: ["coe-starter-kit","enhancement"]
 body:
 - type: textarea
   attributes:
